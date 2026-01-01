@@ -24,10 +24,10 @@ final class KongController extends AbstractController
         ]);
     }
     
-    #[Route('/contacte', name: 'app_contacte', requirements: ['_locale' => 'fr|en'])]
+    #[Route('/contact', name: 'app_contact', requirements: ['_locale' => 'fr|en'])]
     public function contacte(): Response
     {
-        return $this->render('kong/contacte.html.twig', [
+        return $this->render('kong/contact.html.twig', [
             'controller_name' => 'KongController',
         ]);
     }
