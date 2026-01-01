@@ -1,23 +1,75 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}À propos de moi{% endblock %}
+{% block title %}EPortfolio Kong Benjamin{% endblock %}
 
 {% block body %}
-<div class="panel" style="text-align:center">
-    <h1>Bienvenue 👋</h1>
-    <p>Je m'appelle <strong>{{ name }}</strong></p>
-    <p>{{ description }}</p>
+<div class="container my-5">
+    <!-- Section informations personnelles -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body text-center py-5">
+            <h1 class="display-3 mb-4">Kong Benjamin</h1>
+            <p class="lead mb-4">Étudiant en BUT Réseaux et Télécommunications</p>
+            
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="badge bg-secondary fs-6">bznjamin.kong@etu.univ-st-stienne.fr</span>
+                        <span class="badge bg-secondary fs-6">06 08 55 75 87</span>
+                        <span class="badge bg-secondary fs-6">Saint Bonnet Les Oules (42330)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <p class="fs-5 text-muted">
+                Actuellement étudiant en première année de BUT Réseaux et Télécommunications à l’IUT de Roanne,
+                je m’intéresse au fonctionnement des réseaux informatiques, aux systèmes de communication
+                ainsi qu’aux technologies numériques.  
+                Cette formation me permet de développer progressivement des compétences techniques
+                grâce à des travaux pratiques, des projets encadrés et des mises en situation concrètes.
+            </p>
+        </div>
+    </div>
 
-    <h2>Ce que je fais :</h2>
-    <ul style="list-style:none;padding:0;max-width:600px;margin:0 auto">
-        {% for activity in activities %}
-            <li style="
-                background:linear-gradient(90deg,#70e1f5 0%,#ffd194 100%);
-                color:#202020;margin:10px 0;padding:12px 18px;border-radius:12px;
-                font-size:1.1em;box-shadow:0 2px 6px #0003;">
-                {{ activity }}
-            </li>
-        {% endfor %}
-    </ul>
+    <!-- Container "Pour en savoir plus" -->
+    <div class="card border-primary shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">En apprendre davantage</h3>
+        </div>
+        <div class="card-body">
+            <p class="card-text mb-4">
+                Ce portfolio a pour objectif de présenter mon parcours de formation,
+                les compétences que j’acquiers au fil de mes études,
+                ainsi que différents projets réalisés dans un cadre académique ou personnel.
+            </p>
+            
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <a href="{{ path('app_moi') }}" class="btn btn-outline-primary w-100 py-3">
+                        <strong>Présentation personnelle</strong>
+                        <br>
+                        <small>Centres d’intérêt et activités</small>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{{ path('app_cv') }}" class="btn btn-outline-primary w-100 py-3">
+                        <strong>Mon parcours</strong>
+                        <br>
+                        <small>Formation et expériences</small>
+                    </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="{{ path('app_contacte') }}" class="btn btn-outline-primary w-100 py-3">
+                        <strong>Entrer en contact</strong>
+                        <br>
+                        <small>Informations et coordonnées</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

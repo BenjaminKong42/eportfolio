@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV - EPortfolio Kong Benjamin{% endblock %}
+
+{% block body %}
+<div class="py-5">
+    <!-- Hero Section -->
+    <section class="mb-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center py-5">
+                <h1 class="display-4 mb-3">Mon CV</h1>
+                <p class="lead text-muted">Découvrez mon parcours, mes compétences et mes expériences professionnelles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Container -->
+    <section>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <!-- En-tête CV -->
+                <div class="text-center pb-4 mb-4 border-bottom">
+                    <h2 class="h2 mb-2">Kong Benjamin</h2>
+                    <p class="lead text-primary mb-3">Étudiant en BUT Réseau et Télécommunications</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="d-flex flex-wrap justify-content-center gap-3 fs-6">
+                                <span class="badge bg-secondary">benjamin.kong2007@gmail.com</span>
+                                <span class="badge bg-secondary">benjamin.kong@etu.univ-st-etienne.fr</span>
+                                <span class="badge bg-secondary">06 08 55 75 87</span>
+                                <span class="badge bg-secondary">Saint Bonnet Les Oules (42330)</span>
+                                <span class="badge bg-secondary">Permis B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profil -->
+                <div class="mb-5">
+                    <h3 class="h4 mb-3">Profil</h3>
+                    <p class="text-muted">Engagé, curieux et autonome, pleinement conscient des exigences du poste, je suis convaincu de pouvoir être un véritable moteur au sein de votre entreprise.</p>
+                </div>
+
+                <!-- Formation -->
+                <div class="mb-5">
+                    <h3 class="h4 mb-4">Formation</h3>
+                    
+                    <div class="mb-4 ps-3 border-start border-primary border-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="h5 mb-0">Première année en formation BUT Réseau et Télécommunications</h4>
+                            <span class="badge bg-info">2025-2026</span>
+                        </div>
+                        <p class="text-muted mb-0">IUT de Roanne</p>
+                    </div>
+
+                    <div class="mb-4 ps-3 border-start border-primary border-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="h5 mb-0">Baccalauréat mention passable</h4>
+                            <span class="badge bg-info">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 ps-3 border-start border-primary border-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="h5 mb-0">Brevet des collèges mention Assez bien</h4>
+                            <span class="badge bg-info">2021</span>
+                        </div>
+                    </div>
+
+                    
+
+                <!-- Expériences Professionnelles -->
+                <div class="mb-5">
+                    <h3 class="h4 mb-4">Expériences Professionnelles</h3>
+                    
+                    <div class="ps-3 border-start border-primary border-3">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="h5 mb-0">Stage d'observation dans le Groupe Casino (1 semaine)</h4>
+                            <span class="badge bg-info">12/2022</span>
+                        </div>
+                  
+
+                <!-- Compétences -->
+                <div class="mb-5">
+                    <h3 class="h4 mb-4">Compétences</h3>
+                    <p class="text-muted mb-4">J'ai déjà acquis au cours de la formation de nombreuses compétences en plus de celles que je possédais déjà.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Création de machine virtuel sur Ubuntu (sous linux ou Windows)</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Savoir traduire un algorithme en Python en C dans un environnement donné</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Fondamentaux en électronique</li>
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Configuration d'un switch grâce à PuTTY</li>
+                    </ul>
+                </div>
+
+                <!-- Bouton Téléchargement -->
+                <div class="text-center pt-4 border-top">
+                    <a href="#" class="btn btn-primary btn-lg">
+                        <i class="bi bi-download"></i> Télécharger mon CV en PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

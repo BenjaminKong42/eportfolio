@@ -1,96 +1,125 @@
-{# templates/base.html.twig #}
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Eportfolio{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% block stylesheets %}
-    <style>
-        :root{
-            --bg: #0f172a;        /* slate-900 */
-            --panel: #111827ee;   /* gray-900 */
-            --text: #e5e7eb;      /* gray-200 */
-            --accent: #60a5fa;    /* blue-400 */
-            --accent2:#fbbf24;    /* amber-400 */
-        }
-        *{box-sizing:border-box}
-        html,body{height:100%}
-        body{
-            margin:0;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-            color: var(--text);
-            background:
-              radial-gradient(1200px 600px at 10% -20%, #1e3a8a 10%, transparent 60%),
-              radial-gradient(1000px 600px at 90% 120%, #0ea5e9 10%, transparent 60%),
-              linear-gradient(135deg, #0b1020, var(--bg));
-        }
-        a{color:var(--accent);text-decoration:none}
-        a:hover{color:#93c5fd}
-        .wrapper{max-width:1100px;margin:0 auto;padding:24px}
-        header{
-            display:flex;align-items:center;justify-content:space-between;
-            padding:18px 0;margin-bottom:10px
-        }
-        .brand{display:flex;gap:12px;align-items:center}
-        .logo{
-            width:42px;height:42px;border-radius:12px;
-            background:linear-gradient(145deg, #60a5fa, #06b6d4);
-            box-shadow:0 6px 16px #0006;
-        }
-        nav{display:flex;gap:16px;flex-wrap:wrap}
-        nav a{padding:8px 12px;border-radius:10px;background:#111827cc}
-        nav a.active{background:#1f2937;color:#fff}
-        .panel{
-            background: var(--panel);
-            border: 1px solid #1f2937;
-            border-radius: 18px;
-            box-shadow: 0 16px 40px #0008;
-            padding: 24px;
-            margin: 16px 0;
-        }
-        h1,h2{margin:0 0 14px}
-        .grid{
-            display:grid;
-            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-            gap:16px
-        }
-        .pill{display:inline-block;padding:6px 10px;border:1px solid #334155;border-radius:999px;margin:4px 6px 0 0}
-        footer{margin:28px 0 8px;color:#94a3b8;font-size:0.95em}
-        .cta{
-            display:inline-flex;align-items:center;gap:10px;
-            padding:10px 14px;border-radius:12px;
-            background:linear-gradient(90deg, var(--accent), var(--accent2));
-            color:#0b1020;font-weight:600;box-shadow:0 10px 20px #0006
-        }
-    </style>
-    {% endblock %}
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="brand">
-                <div class="logo"></div>
-                <div>
-                    <strong>Eportfolio</strong><br>
-                    <span style="color:#93c5fd">Symfony + Twig</span>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Permet au mode sombre de s'activer directement lors du changement de page. -->
+        <script>
+            // Appliquer le thème IMMÉDIATEMENT au chargement
+            (function() {
+                try {
+                    const theme = localStorage.getItem('theme') || 'light';
+                    if (theme === 'dark') {
+                        document.documentElement.classList.add('dark-mode');
+                    }
+                } catch (e) {}
+            })();
+        </script>
+
+
+        <title>{% block title %}EPortfolio Kong Benjamin{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22></svg>">
+        
+        <!-- Bootswatch Journal Theme -->
+        <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        {% block stylesheets %}
+        <style>
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                    background-color: #dae2eeff;
+                }
+
+                .container {
+                    flex: 1;
+                }
+            </style>
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{ path('app_kong') }}">Kong Benjamin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ path('app_kong') }}" aria-current="page">Maison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_cv') }}">Mon CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_contacte') }}">Me contacter</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Compétences</font></font></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ path('app_administrer') }}">Administrer</a>
+                                <a class="dropdown-item" href="{{ path('app_connecter') }}">Connecter</a>
+                                <a class="dropdown-item" href="{{ path('app_programmer') }}">Programmer</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Bouton Langue (thème Bootswatch) -->
+                    <div class="nav-item dropdown ms-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe me-2"></i>
+                            <span id="currentLanguage">
+                                {% if app.request.locale == 'en' %}
+                                    English
+                                {% else %}
+                                    Français
+                                {% endif %}
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li>
+                                <a class="dropdown-item language-option {% if app.request.locale == 'fr' %}active{% endif %}" href="#" data-lang="fr">
+                                    <i class="bi bi-flag-fill me-2"></i> Français
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item language-option {% if app.request.locale == 'en' %}active{% endif %}" href="#" data-lang="en">
+                                    <i class="bi bi-flag-fill me-2"></i> English
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bouton Mode jour/nuit -->
+                    <button class="btn btn-outline-secondary" id="themeToggle" style="border: none; background: transparent;">
+                        <i class="bi bi-moon-fill" id="themeIcon" style="font-size: 1.25rem;"></i>
+                    </button>
                 </div>
             </div>
-            <nav>
-                <a href="{{ path('app_home') }}" class="{% if app.request.get('_route') == 'app_home' %}active{% endif %}">Accueil</a>
-                <a href="{{ path('kong_home') }}" class="{% if app.request.get('_route') == 'kong_home' %}active{% endif %}">Kong</a>
-                <a href="#projects">Projets</a>
-                <a href="#skills">Compétences</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+        </nav>
 
-        {% block body %}{% endblock %}
+        <!-- Main Content -->
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
 
-        <footer>
-            © {{ "now"|date("Y") }} · Eportfolio · Fait avec Symfony 7 & Twig
-        </footer>
-    </div>
-    {% block javascripts %}{% endblock %}
-</body>
+        <!-- Footer -->
+        {{ include('footer.html.twig') }}
+
+        <!-- Bootstrap JS Bundle -->
+        {% block javascript %}
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        {% endblock %}
+    </body>
 </html>

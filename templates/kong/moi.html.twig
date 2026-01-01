@@ -1,0 +1,183 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À propos de moi - EPortfolio Benjamin Kong{% endblock %}
+
+{% block body %}
+<div class="py-5">
+    <!-- Hero Section -->
+    <section class="mb-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center py-5">
+                <h1 class="display-4 mb-3">À propos de moi</h1>
+                <p class="lead text-muted">
+                    Une présentation de mon profil, de mes centres d’intérêt et de ce qui me motive au quotidien.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qui suis-je ? -->
+    <section class="mb-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h3 mb-4">Présentation</h2>
+                <p class="text-muted mb-3">
+                    Je m’appelle Benjamin Kong et je suis actuellement étudiant en première année de BUT
+                    Réseaux et Télécommunications à l’IUT de Roanne.
+                    Je m’intéresse particulièrement aux domaines liés aux réseaux informatiques,
+                    aux systèmes numériques et aux nouvelles technologies.
+                </p>
+                <p class="text-muted">
+                    De nature motivée et impliquée, j’apprécie apprendre par la pratique,
+                    relever de nouveaux défis et travailler sur des projets concrets.
+                    Mes activités personnelles complètent ma formation et participent à mon développement
+                    aussi bien technique que personnel.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Photo -->
+    <section class="mb-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h3 mb-4">Centres d’intérêt</h2>
+                <div class="row g-4">
+                    <!-- Sports -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/sports.jpg') }}" class="card-img-top" alt="Sports" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Activités sportives</h5>
+                                <p class="card-text text-muted">
+                                    Basket-ball, natation et musculation, pour garder un bon équilibre physique.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informatique -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/informatique.jpg') }}" class="card-img-top" alt="Informatique" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Informatique</h5>
+                                <p class="card-text text-muted">
+                                    Programmation, développement et exploration des nouvelles technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Culture -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/culture.jpg') }}" class="card-img-top" alt="Culture" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Culture générale</h5>
+                                <p class="card-text text-muted">
+                                    Intérêt pour l’histoire, les documentaires et les contenus éducatifs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projets -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/projets.jpg') }}" class="card-img-top" alt="Projets" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Projets personnels</h5>
+                                <p class="card-text text-muted">
+                                    Réalisation de projets créatifs, montage vidéo et expérimentations techniques.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/reseaux.jpg') }}" class="card-img-top" alt="Réseaux" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Réseaux informatiques</h5>
+                                <p class="card-text text-muted">
+                                    Configuration, administration et notions de sécurité réseau.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lecture -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="{{ asset('images/lecture.jpg') }}" class="card-img-top" alt="Lecture" style="object-fit: cover; height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Lecture</h5>
+                                <p class="card-text text-muted">
+                                    Romans, mangas et bandes dessinées.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualités personnelles -->
+    <section>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="h3 mb-4">Qualités personnelles</h2>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
+                            <div>
+                                <h5 class="mb-1">Curiosité</h5>
+                                <p class="text-muted small">
+                                    Intérêt constant pour l’apprentissage et la découverte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
+                            <div>
+                                <h5 class="mb-1">Autonomie</h5>
+                                <p class="text-muted small">
+                                    Capacité à travailler efficacement de manière indépendante.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
+                            <div>
+                                <h5 class="mb-1">Esprit d’équipe</h5>
+                                <p class="text-muted small">
+                                    Bonne communication et collaboration avec les autres.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
+                            <div>
+                                <h5 class="mb-1">Motivation</h5>
+                                <p class="text-muted small">
+                                    Investissement sérieux dans les projets et les objectifs fixés.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
