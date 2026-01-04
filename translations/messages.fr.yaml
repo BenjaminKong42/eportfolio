@@ -1,10 +1,117 @@
-home: "Accueil"
-administrer: "Administrer"
-connecter: "Connecter"
-programmer: "Programmer"
-moi: "À propos de moi"
-cv: "CV"
-contact: "Contact"
-inscription: "Inscription"
-french: "Français"
-english: "English"
+#index
+home.title: "Étudiant en BUT Réseaux & Télécommunications"
+
+home.intro: >
+  Je suis actuellement en première année du BUT Réseaux et Télécommunications à l'IUT de Roanne.
+  Passionné par les technologies, l'informatique et la programmation, je développe mes compétences
+  à travers des projets concrets et une formation complète.
+
+home.more_title: "Pour en savoir plus"
+home.more_text: "Découvrez mon parcours, mes expériences, mes projets personnels et mes centres d'intérêt."
+
+home.btn_about_title: "À propos de moi"
+home.btn_about_sub: "Mes loisirs et projets"
+
+home.btn_cv_title: "Mon CV"
+home.btn_cv_sub: "Parcours et expériences"
+
+home.btn_contact_title: "Me contacter"
+home.btn_contact_sub: "Comment me joindre ?"
+
+
+#base
+nav.home: "Accueil"
+nav.cv: "Mon CV"
+nav.contact: "Me contacter"
+nav.skills: "Compétences"
+nav.skill_admin: "Administrer"
+nav.skill_connect: "Connecter"
+nav.skill_program: "Programmer"
+
+nav.language_fr: "Français"
+nav.language_en: "Anglais"
+
+
+#footer
+footer.rights: "Tous droits réservés."
+
+footer.link_home: "Accueil"
+footer.link_legal: "Mentions légales"
+footer.link_privacy: "Politique de confidentialité"
+footer.link_contact: "Contact"
+
+
+#CV
+cv.meta_title: "Mon CV - EPortfolio Benjamin Kong"
+cv.title: "Mon CV"
+cv.subtitle: "Découvrez mon parcours, mes compétences et mes expériences professionnelles."
+
+cv.header_role: "Étudiant en BUT Réseaux et Télécommunications"
+cv.license: "Permis B"
+
+cv.profile_title: "Profil"
+cv.profile_text: >
+  Sérieux, curieux et autonome, je suis conscient des exigences du monde professionnel.
+  Motivé et impliqué, je souhaite m’investir pleinement afin d’être un atout au sein de votre structure.
+
+cv.education_title: "Formations"
+cv.education_but: "Première année de BUT Réseaux et Télécommunications"
+cv.education_but_place: "IUT de Roanne"
+cv.education_bac: "Baccalauréat – mention Passable"
+cv.education_brevet: "Brevet des collèges – mention Assez bien"
+
+cv.exp_title: "Expériences professionnelles"
+cv.exp_archi_title: "Stage d’observation dans le groupe Casino (1 semaine)"
+
+
+cv.skills_title: "Compétences"
+cv.skills_intro: >
+  Au cours de ma formation et de mes projets personnels, j’ai développé diverses compétences
+  techniques et méthodologiques.
+
+cv.skill_vm: "Montage vidéo"
+cv.skill_algo: "Conception d’algorithmes en Python ou en C dans un environnement donné"
+cv.skill_elec: "Fondamentaux en électronique"
+cv.skill_switch: "Développement de sites web avec le framework Symfony"
+
+cv.skills_plus: >
+  Pour en savoir plus sur les compétences acquises durant ma formation,
+  vous pouvez consulter l’onglet « Compétences » dans la barre de navigation.
+
+cv.download_btn: "Télécharger mon CV en PDF"
+
+
+#moi
+about.meta_title: "À propos de moi - EPortfolio Benjamin Kong"
+about.title: "À propos de moi"
+about.subtitle: "Découvrez mes loisirs, passions, objectifs et projets."
+
+about.who_title: "Qui suis-je ?"
+about.who_p1: >
+  Je m’appelle Benjamin Kong et je suis étudiant en première année de BUT Réseaux et Télécommunications
+  à l’IUT de Roanne. Passionné par les technologies et l’informatique, j’aime approfondir mes connaissances
+  et découvrir de nouveaux domaines liés au numérique.
+
+about.who_p2: >
+  En dehors de mes études, je suis quelqu’un de motivé et dynamique, appréciant le travail en équipe
+  ainsi que les défis. Mes centres d’intérêt reflètent ma curiosité et mon envie constante de progresser.
+
+about.gallery_title: "Mes passions en images"
+
+about.card_sports_text: "Salle de sport, callisthénie"
+
+about.card_it_alt: "Informatique"
+about.card_it_title: "Informatique"
+about.card_it_text: "Programmation"
+
+about.card_culture_alt: "Culture"
+about.card_culture_title: "Culture"
+about.card_culture_text: "Histoire, m'informe sur les nouveautés dans le monde"
+
+about.card_projects_alt: "Projets"
+about.card_projects_title: "Projets"
+about.card_projects_text: "Montage vidéo"
+
+about.card_networks_alt: "Réseaux"
+about.card_networks_title: "Réseaux"
+about.card_networks_text: "Administration.

@@ -1,10 +1,116 @@
-home: "Home"
-administrer: "Manage"
-connecter: "Connect"
-programmer: "Programming"
-moi: "About Me"
-cv: "Resume"
-contact: "Contact"
-inscription: "Registration"
-french: "Français"
-english: "English"
+#index
+home.title: "Student in Networks & Telecommunications"
+
+home.intro: >
+  I am currently in my first year of the Bachelor of Technology (BUT) in Networks and Telecommunications
+  at the IUT of Roanne. Passionate about technology, computer science, and programming,
+  I am developing my skills through hands-on projects and comprehensive training.
+
+home.more_title: "Learn more"
+home.more_text: "Discover my background, experiences, personal projects and interests."
+
+home.btn_about_title: "About me"
+home.btn_about_sub: "My hobbies and projects"
+
+home.btn_cv_title: "My CV"
+home.btn_cv_sub: "Education and experience"
+
+home.btn_contact_title: "Contact me"
+home.btn_contact_sub: "How to reach me?"
+
+
+#base
+nav.home: "Home"
+nav.cv: "My CV"
+nav.contact: "Contact me"
+nav.skills: "Skills"
+nav.skill_admin: "Administer"
+nav.skill_connect: "Connect"
+nav.skill_program: "Program"
+
+nav.language_fr: "French"
+nav.language_en: "English"
+
+
+#footer
+footer.rights: "All rights reserved."
+
+footer.link_home: "Home"
+footer.link_legal: "Legal notice"
+footer.link_privacy: "Privacy policy"
+footer.link_contact: "Contact"
+
+
+#CV
+cv.meta_title: "My CV - EPortfolio Benjamin Kong"
+cv.title: "My CV"
+cv.subtitle: "Discover my education, skills and professional experience."
+
+cv.header_role: "Student in Networks and Telecommunications"
+cv.license: "Driving licence (B)"
+
+cv.profile_title: "Profile"
+cv.profile_text: >
+  Serious, curious and autonomous, I am aware of the demands of the professional world.
+  Motivated and committed, I am eager to fully invest myself and become a valuable asset to your organization.
+
+cv.education_title: "Education"
+cv.education_but: "First year of the Bachelor of Technology in Networks and Telecommunications"
+cv.education_but_place: "IUT of Roanne"
+cv.education_bac: "High school diploma – Pass"
+cv.education_brevet: "Middle school diploma – Fairly good distinction"
+
+cv.exp_title: "Professional experience"
+cv.exp_archi_title: "Architecture observation within the Casino Group(1 week)"
+
+cv.skills_title: "Skills"
+cv.skills_intro: >
+  Through my academic training and personal projects, I have developed various technical
+  and methodological skills.
+
+cv.skill_vm: "Video editing"
+cv.skill_algo: "Designing algorithms in Python or C within a given environment"
+cv.skill_elec: "Fundamentals of electronics"
+cv.skill_switch: "Web development using the Symfony framework"
+
+cv.skills_plus: >
+  To learn more about the skills acquired during my studies,
+  you can explore the “Skills” section in the navigation bar.
+
+cv.download_btn: "Download my CV as PDF"
+
+
+#about
+about.meta_title: "About me - EPortfolio Benjamin Kong"
+about.title: "About me"
+about.subtitle: "Discover my hobbies, passions, goals and projects."
+
+about.who_title: "Who am I?"
+about.who_p1: >
+  My name is Benjamin Kong and I am a first-year student in Networks and Telecommunications
+  at the IUT of Roanne. Passionate about technology and computer science,
+  I enjoy deepening my knowledge and exploring new digital fields.
+
+about.who_p2: >
+  Outside of my studies, I am a motivated and dynamic person who enjoys teamwork
+  and challenges. My interests reflect my curiosity and constant desire to improve.
+
+about.gallery_title: "My passions in pictures"
+
+about.card_sports_text: "Gym training, calisthenics"
+
+about.card_it_alt: "Computer science"
+about.card_it_title: "Computer science"
+about.card_it_text: "Programming"
+
+about.card_culture_alt: "Culture"
+about.card_culture_title: "Culture"
+about.card_culture_text: "History, staying informed about global news and innovations"
+
+about.card_projects_alt: "Projects"
+about.card_projects_title: "Projects"
+about.card_projects_text: "Video editing"
+
+about.card_networks_alt: "Networks"
+about.card_networks_title: "Networks"
+about.card_networks_text: "Administration"
