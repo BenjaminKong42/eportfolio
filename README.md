@@ -7,5 +7,7 @@
 - installation composer (package php)
 
 # Lancement (dev)
+```
 cd public
 symfony server:start
+```
