@@ -22,9 +22,8 @@ J'ai dû installer aussi les élements suivants:
 # Lancement (dev)
 
 ```
-git clone nom du dépot
-cd mon_dépot 
-cd public
+git clone git@github.com:BenjaminKong42/eportfolio.git
+cd eportfolio/public 
 symfony server:start
 ```
 # Améliorations/simplification
